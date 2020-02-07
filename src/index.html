@@ -4,7 +4,6 @@
     <title>Jen's A Frame</title>
     <script src="main.js"></script>
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -14,9 +13,9 @@
       </a-assets>
 
       <a-torus-knot position='-5 1 -5' color='red'></a-torus-knot>
-      <a-dodecahedron position='5 1 -5' color='lime'></a-dodecahedron>
+      <a-dodecahedron position='5 1 -5' color='blue'></a-dodecahedron>
 
-      
+
       <a-entity id='box' geometry="primitive: box; width:1; depth: 1; height: 1" position="-1 0.5 -3" material="src: #puffleTexture"></a-entity>
 
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E">
@@ -26,9 +25,9 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky src="#skyTexture"></a-sky>
 
-      <a-entity position="-1, 4, -2" light="type: point" id='lightSphere' geometry="primitive: sphere" material="color: #FFF; shader: flat"
-      animation="property: position; dir: alternate; dur: 1000;
-      easing: easeInSine; loop: true; to: 3, 4, -2"
+      <a-entity position="-1, 4, -2.1" light="type: point" id='lightSphere' geometry="primitive: sphere" material="color: #FFF; shader: flat"
+      animation="property: position; dir: alternate; dur: 10000;
+      easing: easeInOutCubic; loop: true; to: 1, 4, -2"
       ></a-entity>
     </a-scene>
   </body>
