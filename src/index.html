@@ -10,14 +10,15 @@
       <a-assets>
         <img id="puffleTexture" src="img/puffle.png">
         <img id="skyTexture" src="img/sky.jpg">
+        <a-asset-item id="wolfModel" src="models/wolf_fixed.glb"></a-asset-item>
       </a-assets>
 
-      <a-torus-knot position='-5 1 -5' color='red'></a-torus-knot>
+      <a-torus-knot log="message: Hello! bobina" position='-5 1 -5' color='red'></a-torus-knot>
       <a-dodecahedron position='5 1 -5' color='blue'></a-dodecahedron>
 
 
       <a-entity id='box' geometry="primitive: box; width:1; depth: 1; height: 1" position="-1 0.5 -3" material="src: #puffleTexture"></a-entity>
-
+      <a-gltf-model src="#wolfModel" rotation="0 90 0" animation-mixer="loop: repeat;" position="-1 0.5 -100" scale="0.5 0.5 0.5"></a-gltf-model>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E">
         <a-ring position="0 0 1" color="#000000"></a-ring>
       </a-sphere>
